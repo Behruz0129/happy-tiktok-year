@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 19, 19);
+    font-family: 'Nerko One', cursive;
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(21, 21, 21);
+    box-shadow: -5px 0 50px rgba(255, 255, 255, 0.1);
+    min-height: 100vh;
+    .logo {
+        margin: 0 auto;
+        margin-top: 20px;
+        img {
+            height: 60px;
+        }
+    }
+    .sci {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 40vh;
+        a {
+            img {
+                height: 30px;
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+        color: white;
+        text-shadow: -3px -3px 1px cyan, 3px 3px 1px rgb(255, 0, 64);
+        font-size: 50px;
+        text-align: center;
+        .tugash {
+            margin-right: 20px;
+        }
+        span:hover {
+            color: cyan;
+            text-shadow: none;
+            cursor: pointer;
+            font-size: 50px;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 650px;
+            background: #333;
+            color: cyan;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: -3px -3px 10px cyan, 3px 3px 10px rgb(255, 0, 64);
+            font-size: 30px;
+            margin-bottom: 50px;
+            div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input, textarea {
+                    background: none;
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid cyan;
+                    font-size: 20px;
+                    color: white;
+                    text-shadow: -1px -1px 1px cyan, 1px 1px 1px rgb(255, 0, 64);
+                }
+                textarea {
+                    margin-top: 50px;
+                    width: 100%;
+                }
+            }
+            button {
+                margin-top: 50px;
+                border-radius: 10px;
+                background-color: #fff;
+                color: #212121;
+                text-shadow: -1px -1px 1px cyan, 1px 1px 1px rgb(255, 0, 64);
+                padding: 10px;
+                outline: none;
+                border: none;
+            }
+        }
+        img {
+            height: 400px;
+            margin-left: 100px;
+        }
+    }
+}
